@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Gem Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- row 1 Crystal Collector text -->
+      <div class="row">Crystal collector</div>
+
+      <!-- Row 2 Game text -->
+      <div class="row"></div>
+
+      <!-- row 3 Users goal text & wins/losses counter -->
+      <div class="row">
+        <div class="col-md-6">
+          <div id="playerGoal"></div>
+        </div>
+        <div class="col-md-3">
+          <div id="usersScore"></div>
+        </div>
+      </div>
+
+      <!-- row 4 Crystals -->
+      <div class="row">
+        <!-- Blue Crystal -->
+        <div class="col-md-3">
+          <div id="valueOfBlueCrystal">
+            <img
+              src="assets/images/BlueGem.jpg"
+              height="75"
+              width="75"
+              alt="blueGem"
+            />
+          </div>
+        </div>
+        <!-- Green Crystal -->
+        <div class="col-md-3">
+          <div id="valueOfGreenCrystal">
+            <img src="assets/images/GreenGem.jpg" height="75" width="75" />
+          </div>
+        </div>
+        <!-- Red Crystal -->
+        <div class="col-md-3">
+          <div id="valueOfRedCrystal">
+            <img src="assets/images/RedGem.jpg" height="75" width="75" />
+          </div>
+        </div>
+        <!-- Yellow Crystal -->
+        <div class="col-md-3">
+          <div id="valueOfYellowCrystal">
+            <img src="assets/images/YellowGem.jpg" height="75" width="75" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 5  -->
+      <div class="row"></div>
+      <!-- Row 6 Players score counter text -->
+      <div class="row"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
