@@ -12,9 +12,9 @@ var valueOfRedGem = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 var valueOfYellowGem = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 var userScore = 0;
 
-console.log("Blue Gem: " + valueOfBlueGem);
-console.log("Green Gem: " + valueOfGreenGem);
-console.log("Red Gem: " + valueOfRedGem);
+console.log("Blue Gem:  "  + valueOfBlueGem);
+console.log("Green Gem: "  + valueOfGreenGem);
+console.log("Red Gem:   "  + valueOfRedGem);
 console.log("Yellow Gem: " + valueOfYellowGem);
 
 //Collects USER input when CRYSTAL is clicked
@@ -35,6 +35,16 @@ $("#valueOfYellowCrystal").on("click", function() {
   userScore = userScore + valueOfYellowGem;
   console.log(userScore);
 });
+//TODO:print player's total score to screen and have the number update when clicked
+$("#playersTotalScore").text(userScore);
 //TODO:HAVE THE WINS GO UP IF NUMBER MATCHES
+var wins = 0;
+var losses = 0;
+    if(){
+        wins++;
+        $(users)
+    }else if(){
+
+    }
 //TODO:HAVE LOSES GO UP WHEN PLAYER GOES OVER GIVEN VALUE
 //TODO:HAVE THE GAME RESET WITH DIFFERENT VALUES FOR THE GEMS

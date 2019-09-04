@@ -6,10 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The Gem Game</title>
     <!-- bootstrap link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- My link -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
     <div class="container">
       <!-- row 1 Crystal Collector text -->
@@ -24,7 +30,12 @@
           <div id="playerGoal"></div>
         </div>
         <div class="col-md-3">
-          <div id="usersScore"></div>
+          <div id="usersScore">
+              <div class="row" id="winsText">
+                  
+              </div>
+              <div class="row" id="lossesText"></div>
+          </div>
         </div>
       </div>
 
@@ -63,8 +74,11 @@
 
       <!-- Row 5  -->
       <div class="row"></div>
+
       <!-- Row 6 Players score counter text -->
-      <div class="row"></div>
+      <div class="row">
+          <div id="playersTotalScore">0</div>
+      </div>
     </div>
 
     <script
