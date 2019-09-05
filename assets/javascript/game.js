@@ -42,7 +42,7 @@ $("#valueOfYellowCrystal").on("click", function() {
 var wins = 0;
 var losses = 0;
 
-//HAVE THE WINS GO UP IF NUMBER MATCHES
+//TODO:HAVE THE WINS GO UP IF NUMBER MATCHES
 if (playerGoal === userScore) {
   wins++;
   $("#winsText").text("wins:" + wins);

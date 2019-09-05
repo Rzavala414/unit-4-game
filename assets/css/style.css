@@ -1,13 +1,23 @@
 body{
 	background: url(https://www.wallpaperup.com/uploads/wallpapers/2012/09/09/13503/a84a8304568939a75db78a5ff14daee2-700.jpg);
-	font-family: 'Luckiest Guy', cursive;
+	font-family: 'Concert One', cursive;
 	color: white;
+
+}
+#gameRules{
+	background: rgb(131, 126, 126,0.6);
 	
 }
 #gemRow{
 	display: flex;
 	justify-content: center;
 }
+#gameTitle{
+	margin: 20px;
+	font-weight: bold;
+	
+}
+
 .gemDiv{
 	display:flex;
 	justify-content: center;
