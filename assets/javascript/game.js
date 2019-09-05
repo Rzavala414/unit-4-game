@@ -12,17 +12,17 @@ var valueOfRedGem = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 var valueOfYellowGem = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 var userScore = 0;
 
-console.log("Blue Gem:  "  + valueOfBlueGem);
-console.log("Green Gem: "  + valueOfGreenGem);
-console.log("Red Gem:   "  + valueOfRedGem);
+console.log("Blue Gem:  " + valueOfBlueGem);
+console.log("Green Gem: " + valueOfGreenGem);
+console.log("Red Gem:   " + valueOfRedGem);
 console.log("Yellow Gem: " + valueOfYellowGem);
 
 //Collects USER input when CRYSTAL is clicked
 //prints player's total score to screen and have the number update when clicked
 $("#valueOfBlueCrystal").on("click", function() {
-    userScore = userScore + valueOfBlueGem;
-    $("#playersTotalScore").text(userScore);
-    console.log(userScore);
+  userScore = userScore + valueOfBlueGem;
+  $("#playersTotalScore").text(userScore);
+  console.log(userScore);
 });
 $("#valueOfGreenCrystal").on("click", function() {
   userScore = userScore + valueOfGreenGem;
@@ -38,17 +38,27 @@ $("#valueOfYellowCrystal").on("click", function() {
   userScore = userScore + valueOfYellowGem;
   $("#playersTotalScore").text(userScore);
   console.log(userScore);
-
 });
-//TODO:HAVE THE WINS GO UP IF NUMBER MATCHES
 var wins = 0;
 var losses = 0;
-    if(playerGoal === userScore ){
-        wins++;
-        $("#winsText").text(wins);
-    }else if( playerGoal< userScore){
-        losses++;
-        $("#lossesText").text(losses);
-    };
-//TODO:HAVE LOSES GO UP WHEN PLAYER GOES OVER GIVEN VALUE
+
+//HAVE THE WINS GO UP IF NUMBER MATCHES
+if (playerGoal === userScore) {
+  wins++;
+  $("#winsText").text("wins:" + wins);
+  reset();
+  //TODO:HAVE LOSES GO UP WHEN PLAYER GOES OVER GIVEN VALUE
+} else if (playerGoal < userScore) {
+  losses++;
+  $("#lossesText").text("losses:" + losses);
+  reset();
+}
 //TODO:HAVE THE GAME RESET WITH DIFFERENT VALUES FOR THE GEMS
+function reset(){
+  userScore = 0;
+  var valueOfBlueGem = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+  var valueOfGreenGem = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+  var valueOfRedGem = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+  var valueOfYellowGem = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+
+}
