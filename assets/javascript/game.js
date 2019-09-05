@@ -18,33 +18,37 @@ console.log("Red Gem:   "  + valueOfRedGem);
 console.log("Yellow Gem: " + valueOfYellowGem);
 
 //Collects USER input when CRYSTAL is clicked
-//HAVE THE NUMBER THE USER CLICKED ON ADD TO THE TOTAL SCORE BOX
+//prints player's total score to screen and have the number update when clicked
 $("#valueOfBlueCrystal").on("click", function() {
-  userScore = userScore + valueOfBlueGem;
-  console.log(userScore);
+    userScore = userScore + valueOfBlueGem;
+    $("#playersTotalScore").text(userScore);
+    console.log(userScore);
 });
 $("#valueOfGreenCrystal").on("click", function() {
   userScore = userScore + valueOfGreenGem;
+  $("#playersTotalScore").text(userScore);
   console.log(userScore);
 });
 $("#valueOfRedCrystal").on("click", function() {
   userScore = userScore + valueOfRedGem;
+  $("#playersTotalScore").text(userScore);
   console.log(userScore);
 });
 $("#valueOfYellowCrystal").on("click", function() {
   userScore = userScore + valueOfYellowGem;
+  $("#playersTotalScore").text(userScore);
   console.log(userScore);
+
 });
-//TODO:print player's total score to screen and have the number update when clicked
-$("#playersTotalScore").text(userScore);
 //TODO:HAVE THE WINS GO UP IF NUMBER MATCHES
 var wins = 0;
 var losses = 0;
-    if(){
+    if(playerGoal === userScore ){
         wins++;
-        $(users)
-    }else if(){
-
-    }
+        $("#winsText").text(wins);
+    }else if( playerGoal< userScore){
+        losses++;
+        $("#lossesText").text(losses);
+    };
 //TODO:HAVE LOSES GO UP WHEN PLAYER GOES OVER GIVEN VALUE
 //TODO:HAVE THE GAME RESET WITH DIFFERENT VALUES FOR THE GEMS
